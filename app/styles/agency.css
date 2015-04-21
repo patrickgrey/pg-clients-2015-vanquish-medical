@@ -172,6 +172,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default {
     border-color: transparent;
     background-color: #222;
+    text-shadow: 1px 1px 0 black; 
 }
 
 .navbar-default .navbar-brand {
@@ -266,13 +267,26 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url(../images/header-bg.jpg);
+    text-shadow: 1px 1px 0 black; 
+    background-image: url(../images/header/bg-9.jpg);
     background-position: center center;
     background-repeat: none;
+    background-color: #333;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+}
+
+.vm-bg-changers {
+    margin-top: 2em;
+}
+
+.vm-bg-changer {
+    font-size: 2em;
+    padding: 0.5em;
+    border-radius: 50%;
+    /*background: #fff;*/
 }
 
 header .intro-text {
@@ -654,7 +668,7 @@ aside.clients img {
 
 section#contact {
     background-color: #222;
-    background-image: url(../images/map-image.png);
+    /*background-image: url(../images/map-image.png);*/
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -739,10 +753,15 @@ footer ul.quicklinks {
 
 ul.social-buttons {
     margin-bottom: 0;
+    list-style: none;
+}
+
+ul.social-buttons li a i {
+    margin-right: 1em;
 }
 
 ul.social-buttons li a {
-    display: block;
+    display: inline;
     width: 40px;
     height: 40px;
     border-radius: 100%;
@@ -754,6 +773,16 @@ ul.social-buttons li a {
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     transition: all .3s;
+}
+
+@media(min-width:768px) {
+    ul.social-buttons li a {
+        width: 80px;
+        height: 80px;
+        border-radius: 100%;
+        font-size: 40px;
+        line-height: 80px;
+    }
 }
 
 ul.social-buttons li a:hover,
@@ -865,4 +894,14 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #fed136;
+}
+
+blockquote {
+    padding-top: 20px;
+    border-left: none;
+    margin-bottom: 0;
+}
+
+.vm-blockquote-footer {
+    padding-bottom: 20px;
 }

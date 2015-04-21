@@ -31,3 +31,10 @@ $('body > *').not('nav').click(function() {
         $('.navbar-toggle:visible').click();
     }
 });
+
+$('.vm-bg-changer').click(function(e) {
+    e.preventDefault();
+    // console.log(window.location.pathname);
+    // console.log($(this).text());
+    $('header').css({'background-image': 'url('+window.location.pathname+'images/header/bg-'+$(this).text()+'.jpg)'});
+});
